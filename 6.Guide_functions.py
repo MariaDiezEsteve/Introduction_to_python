@@ -43,3 +43,12 @@ heading, subheading = heading.split(': ')
 print(heading)
 print(subheading)
 
+#1.3 Check if Strings Represent Numbers or Alphanumeric Characters in Python
+api_data = '5'
+greeting = 'Hi there'
+
+print("alpha numero", api_data.isalpha())
+print("alpha string", greeting.isalpha())
+
+print("numeric numero",api_data.isnumeric())
+print("numeric string",greeting.isnumeric())
