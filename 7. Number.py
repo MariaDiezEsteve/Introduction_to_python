@@ -121,7 +121,7 @@ print(math.sqrt(product_cost)) #https://developer.mozilla.org/es/docs/Web/JavaSc
 print(math.pow(5, 2)) #https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/pow: takes two arguments. And so if I do five comma two and print this out it's 25 because it's going to be five squared.(25.0)
 print(5 ** 2) #(25)
 
-#1.4.4 Build a Manual Exponent Function in Python
+#1.4.4 Build a Manual Exponent Function in Python0
 from functools import reduce
 
 #  def manual_exponent(num, exp):
@@ -133,6 +133,21 @@ from functools import reduce
 #  print(manual_exponent(10, 2))
 #  print(manual_exponent(3, 3))
 #  print(manual_exponent(10, 5))
+
+# def manual_exponent(num, exp):
+#     counter = exp - 1
+#     total = num
+
+#     while counter > 0:
+#         total *= num
+#         counter -= 1
+
+#     return total
+
+# print(manual_exponent(2, 3))
+# print(manual_exponent(10, 2))
+# print(manual_exponent(3, 3))
+# print(manual_exponent(10, 5))
 
 def manual_exponent(num, exp):
     counter = exp - 1
@@ -148,4 +163,3 @@ print(manual_exponent(2, 3))
 print(manual_exponent(10, 2))
 print(manual_exponent(3, 3))
 print(manual_exponent(10, 5))
-
