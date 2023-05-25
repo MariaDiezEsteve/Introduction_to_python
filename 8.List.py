@@ -217,3 +217,25 @@ print(slice_obj.stop) #4
 print(slice_obj.step)# 2
 
 print(tags[slice_obj]) #['development', 'code']
+
+#1.12 How to Add to a List in Python with Both In Place and Copy Processes
+
+tags = ['python', 'development', 'tutorials', 'code']
+
+# Nope
+tags[-1] = 'Programming' #['python', 'development', 'tutorials', 'Programming'] -> Change the last position for programming
+print(tags)
+# In Place
+# tags.extend('Programming') #['python', 'development', 'tutorials', 'Programming', 'P', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g'] -> Add the element like each character is a string
+# print(tags)
+tags.extend(['Programming']) #['python', 'development', 'tutorials', 'Programming', 'Programming'] -> extend make the same like sort, don't change the variables and can't keep the result
+print(tags)
+
+# New List
+new_tags = tags + ['Programming'] #['python', 'development', 'tutorials', 'code', 'Programming']
+
+print(new_tags)
+
+print(tags)
+
+#2. Proyect: Build a Weighted Lottery Function in Python
